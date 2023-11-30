@@ -31,8 +31,8 @@ https://releases.hashicorp.com/vagrant-vmware-utility/1.0.21/vagrant-vmware-util
   vim Vagrantfile
  
  Copy paste  below content in the Vagrantfile
-  
-  Vagrant.configure("2") do |config| 
+```
+Vagrant.configure("2") do |config| 
   config.vm.box = "spox/ubuntu-arm" 
   config.vm.box_version = "1.0.0"
   config.vm.network "private_network", ip: "192.168.56.11"
@@ -41,9 +41,7 @@ https://releases.hashicorp.com/vagrant-vmware-utility/1.0.21/vagrant-vmware-util
     vmware.allowlist_verified = true
    end
  end
-
-	
-
+```  
 		Vagrant.configure("2") do |config|
 		config.vm.box = "spox/ubuntu-arm"
 		config.vm.box_version = "1.0.0"
@@ -72,8 +70,8 @@ https://releases.hashicorp.com/vagrant-vmware-utility/1.0.21/vagrant-vmware-util
     vim Vagrantfile
  
  Copy paste  below content in the Vagrantfile
-  
-    Vagrant.configure("2") do |config| 
+  ```
+Vagrant.configure("2") do |config| 
     config.vm.box = "jacobw/fedora35-arm64" 
     config.vm.network "private_network", ip: "192.168.56.12"
     config.vm.provider "vmware_desktop" do |vmware|
@@ -81,7 +79,7 @@ https://releases.hashicorp.com/vagrant-vmware-utility/1.0.21/vagrant-vmware-util
       vmware.allowlist_verified = true
     end
   end
-	
+  ```
 
 11. Bring up vm
 	Open Terminal, go to the folder where you created Vagrantfile & issue below command.
