@@ -74,7 +74,7 @@ Vagrant.configure("2") do |config|
        cp -r 2135_mini_finance/* /var/www/html/
        systemctl restart httpd
        systemctl stop firewalld
-       systemctl disabled firewalld
+       systemctl disable firewalld
        cd /tmp/
        rm -rf /tmp/finance
      SHELL
